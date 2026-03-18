@@ -1,9 +1,11 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -48,49 +50,51 @@
         .project {
             background-color: #161b22;
             border: 1px solid #30363d;
-            border-radius: 6px;
+            border-radius: 8px;
             padding: 24px;
-            transition: border-color 0.2s ease;
+            transition: all 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .project:hover {
-            border-color: #8b949e;
+            border-color: #58a6ff;
+            transform: translateY(-4px);
         }
 
         .project-header {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
 
         .project-icon {
-            width: 80px;  
-            height: 80px; 
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
             background-color: #30363d;
             margin-right: 16px;
             overflow: hidden;
-            flex-shrink: 0; 
+            flex-shrink: 0;
         }
 
         .project-icon img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            display: block; 
         }
 
         .project h3 {
             font-size: 16px;
             font-weight: 600;
-            margin-bottom: 8px;
-            color: #c9d1d9;
+            margin: 0;
         }
 
         .project p {
             color: #8b949e;
             font-size: 14px;
-            margin-bottom: 16px;
+            margin: 12px 0 16px;
         }
 
         .project a {
@@ -98,7 +102,6 @@
             text-decoration: none;
             font-size: 14px;
             font-weight: 500;
-            transition: color 0.2s ease;
         }
 
         .project a:hover {
@@ -107,106 +110,98 @@
         }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-    </header>
-    
-    <div class="container">
-        <p class="intro">Here are some of my featured projects:</p>
-        <div class="projects">
 
-            <!-- THE NEW MLOPS PROJECT -->
-            <div class="project">
-                <div class="project-header">
-                    <div class="project-icon">
-                        <img src="https://raw.githubusercontent.com/Toheed1234/churn-prediction-mlops/main/assets/logo.png" alt="Churn Prediction Logo">
+<header>
+    <h1>My Portfolio</h1>
+</header>
 
-                    </div>
-                    <h3>Customer Churn MLOps Pipeline</h3>
-                </div>
-                <p>End-to-end Machine Learning API prediction pipeline containerized with Docker, featuring CI/CD and a Streamlit dashboard.</p>
-                <a href="https://github.com/Toheed1234/churn-prediction-mlops" target="_blank">View on GitHub →</a>
-            </div>
-            
-            <div class="project">
-                <div class="project-header">
-                    <div class="project-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/4335/4335440.png" alt="AntiFraudAI Icon">
-                    </div>
-                    <h3>AntiFraudAI</h3>
-                </div>
-                <p>A machine learning project for detecting fraudulent transactions.</p>
-                <a href="https://github.com/Toheed1234/AntiFraudAI-Project" target="_blank">View on GitHub →</a>
-            </div>
+<div class="container">
+    <p class="intro">Here are some of my featured projects:</p>
 
-            <div class="project">
-                <div class="project-header">
-                    <div class="project-icon">
-                        <img src="https://raw.githubusercontent.com/yunjey/pytorch-tutorial/master/tutorials/03-advanced/image_captioning/png/model.png" alt="Wildlife Detection Icon">
-                    </div>
-                    <h3>Image-Captioning-Pytorch</h3>
-                </div>
-                <p>PyTorch Image Captioning from Scratch</p>
-                <a href="https://github.com/Toheed1234/Image-Captioning-Pytorch-" target="_blank">View on GitHub →</a>
-            </div>
+    <div class="projects">
 
-            <div class="project">
-                <div class="project-header">
-                    <div class="project-icon">
-                        <img src="https://deeplobe.ai/wp-content/uploads/2023/06/Object-detection-Real-world-applications-and-benefits.png" alt="Object Detection Icon">
-                    </div>
-                    <h3>Object Detection</h3>
+        <div class="project">
+            <div class="project-header">
+                <div class="project-icon">
+                    <img src="https://raw.githubusercontent.com/Toheed1234/churn-prediction-mlops/main/assets/logo.png">
                 </div>
-                <p>Real-time object detection implementation.</p>
-                <a href="https://github.com/Toheed1234/Object-Detection-Assignment" target="_blank">View on GitHub →</a>
+                <h3>Customer Churn MLOps Pipeline</h3>
             </div>
-             <p>A machine learning project for detecting fraudulent transactions.</p>
-                <a href="https://github.com/Toheed1234/AntiFraudAI-Project" target="_blank">View on GitHub →</a>
-            </div>
-
-            <div class="project">
-                <div class="project-header">
-                    <div class="project-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/8653/8653130.png" alt="Wildlife Detection Icon">
-                    </div>
-                    <h3>Snapshot-Karoo-Wildlife-Detection</h3>
-                </div>
-                <p>AI-powered wildlife detection system for Karoo region.</p>
-                <a href="https://github.com/Toheed1234/Snapshot-Karoo-Wildlife-Detection" target="_blank">View on GitHub →</a>
-            </div>
-
-            <div class="project">
-                <div class="project-header">
-                    <div class="project-icon">
-                        <img src="https://deeplobe.ai/wp-content/uploads/2023/06/Object-detection-Real-world-applications-and-benefits.png" alt="Object Detection Icon">
-                    </div>
-                    <h3>Object Detection</h3>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-header">
-                    <div class="project-icon">
-                        <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs40595-014-0028-3/MediaObjects/40595_2014_28_Fig5a_HTML.jpg" alt="Image Segmentation Icon">
-                    </div>
-                    <h3>Image Segmentation</h3>
-                </div>
-                <p>YOLOv8-based image segmentation model with custom object detection capabilities.</p>
-                <a href="https://github.com/Toheed1234/Image-Segmentation" target="_blank">View on GitHub →</a>
-            </div>
-
-            <div class="project">
-                <div class="project-header">
-                    <div class="project-icon">
-                        <img src="https://ambolt.io/wp-content/uploads/classification-intro.jpg" alt="Image Classification Icon">
-                    </div>
-                    <h3>Image Classification</h3>
-                </div>
-                <p>Fruit Image Classifier using MobileNetV2 on the Fruits 360 dataset.</p>
-                <a href="https://github.com/Toheed1234/Image-Classification" target="_blank">View on GitHub →</a>
-            </div>
+            <p>End-to-end ML API pipeline with Docker, CI/CD, and Streamlit dashboard.</p>
+            <a href="https://github.com/Toheed1234/churn-prediction-mlops" target="_blank">View on GitHub →</a>
         </div>
+
+        <div class="project">
+            <div class="project-header">
+                <div class="project-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4335/4335440.png">
+                </div>
+                <h3>AntiFraudAI</h3>
+            </div>
+            <p>Machine learning project for detecting fraudulent transactions.</p>
+            <a href="https://github.com/Toheed1234/AntiFraudAI-Project" target="_blank">View on GitHub →</a>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <div class="project-icon">
+                    <img src="https://raw.githubusercontent.com/yunjey/pytorch-tutorial/master/tutorials/03-advanced/image_captioning/png/model.png">
+                </div>
+                <h3>Image-Captioning-Pytorch</h3>
+            </div>
+            <p>PyTorch Image Captioning from Scratch</p>
+            <a href="https://github.com/Toheed1234/Image-Captioning-Pytorch-" target="_blank">View on GitHub →</a>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <div class="project-icon">
+                    <img src="https://deeplobe.ai/wp-content/uploads/2023/06/Object-detection-Real-world-applications-and-benefits.png">
+                </div>
+                <h3>Object Detection</h3>
+            </div>
+            <p>Real-time object detection implementation.</p>
+            <a href="https://github.com/Toheed1234/Object-Detection-Assignment" target="_blank">View on GitHub →</a>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <div class="project-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/8653/8653130.png">
+                </div>
+                <h3>Snapshot-Karoo-Wildlife-Detection</h3>
+            </div>
+            <p>AI-powered wildlife detection system.</p>
+            <a href="https://github.com/Toheed1234/Snapshot-Karoo-Wildlife-Detection" target="_blank">View on GitHub →</a>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <div class="project-icon">
+                    <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs40595-014-0028-3/MediaObjects/40595_2014_28_Fig5a_HTML.jpg">
+                </div>
+                <h3>Image Segmentation</h3>
+            </div>
+            <p>YOLOv8-based segmentation model.</p>
+            <a href="https://github.com/Toheed1234/Image-Segmentation" target="_blank">View on GitHub →</a>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <div class="project-icon">
+                    <img src="https://ambolt.io/wp-content/uploads/classification-intro.jpg">
+                </div>
+                <h3>Image Classification</h3>
+            </div>
+            <p>Fruit classifier using MobileNetV2.</p>
+            <a href="https://github.com/Toheed1234/Image-Classification" target="_blank">View on GitHub →</a>
+        </div>
+
     </div>
+</div>
+
 </body>
 </html>
+```
